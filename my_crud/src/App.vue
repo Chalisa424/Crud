@@ -1,11 +1,11 @@
-<script setup lang="ts">
-import router from './router';
-</script>
 
 <template>
  <main>
-  <router-view />
+   <BlogsListView />
  </main>
   
 </template>
+<script setup lang="ts">
+import BlogsListView from './views/BlogsListView.vue';
+</script>
 

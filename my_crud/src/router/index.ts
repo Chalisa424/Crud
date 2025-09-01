@@ -9,25 +9,25 @@ const router = createRouter({
     routes:[
         {
             //หน้ารายการบทความ
-            path:'/blog',
+            path:'/blogs',
             name: 'BlogList',
             component: BlogsListView
         },
         {
             //สร้างหน้าจอเพิ่มบทความ
-            path:'/blog/create'	,
+            path:'/blogs/create'	,
             name:'BlogCreate',
             component: BlogCreateView
         },
         {
             //สร้างหน้าแสดงข้อมูลบทความ
-            path:'/blog/:id',
+            path:'/blogs/:id',
             name:'BlogDetailView',
             component: BlogDetailView
         },
         {
            //สร้างหน้าแสดงแก้ไขบทความ
-           path:'/blog/:id/update',
+           path:'/blogs/:id/update',
            name: 'BlogUpdateView',
            component: BlogUpdateView
         }
